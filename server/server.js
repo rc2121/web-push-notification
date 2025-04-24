@@ -28,8 +28,8 @@ app.post("/api/save-subscription", (req, res) => {
   res.status(201).json({ message: "Subscribed" });
 
   const payload = JSON.stringify({
-    title: "test",
-    body: "New notification from backend",
+    title: "Subscribed",
+    body: "Successfully subscribed for notifications",
   });
 
   console.log(subscription);

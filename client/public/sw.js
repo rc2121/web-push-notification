@@ -1,9 +1,8 @@
 console.log('Loaded service worker!');
 
 self.addEventListener("push", function (event) {
-  console.log("Notification data----------", event.data);
+  console.log("Notification details:", event.data);
   const data = event.data?.json() || {};
-  console.log('Got push', data);
   const title = data.title || "Notification";
   const options = {
     body: data.body,

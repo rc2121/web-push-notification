@@ -38,7 +38,7 @@ app.post("/api/save-subscription", (req, res) => {
       { endpoint: subscription?.endpoint, keys: subscription?.keys },
       payload
     )
-    .then((res) => console.log("Notification send00000000", res))
+    .then((res) => console.log("Subscription Notification:", res))
     .catch((error) => {
       console.error(error.stack);
     });
